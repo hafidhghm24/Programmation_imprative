@@ -1,0 +1,14 @@
+DEBUT DE TEST MODULE 
+TEST DU MODULE : GHOUILEM_MODULE_IMAGE
+TRACE : test du niveau avec la valeur : 8
+8 8
+0 0 0 0 0 0 0 0 
+0 1 1 0 0 4 4 0 
+0 1 1 0 4 4 0 0 
+0 0 0 0 0 4 4 0 
+0 2 0 0 0 5 0 0 
+0 2 0 0 0 5 0 0 
+0 2 2 0 5 5 5 0 
+0 0 0 0 0 0 0 0 
+La valeur est valide
+FIN DE TEST MODULE 
