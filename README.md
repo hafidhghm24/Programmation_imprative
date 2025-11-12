@@ -20,7 +20,7 @@ Concevoir un programme C capable de :
 - Gérer les erreurs via `stderr`
 - Automatiser la compilation avec un **Makefile**
 
-![image1](https://github.com/user-attachments/assets/e30adc39-aaea-407c-813a-9c0b48de3ad5) ![image2_4N](https://github.com/user-attachments/assets/eb2135de-00ed-44be-b6e9-a88ae8dc0262)
+![image1](https://github.com/user-attachments/assets/e30adc39-aaea-407c-813a-9c0b48de3ad5)
 
 
 ---
