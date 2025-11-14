@@ -22,6 +22,12 @@ Concevoir un programme C capable de :
 
 ![image1](https://github.com/user-attachments/assets/e30adc39-aaea-407c-813a-9c0b48de3ad5)
 
+---
+## 📚 TP Pile statique — Structures de données & compilation modulaire
+⚙️ Objectif :
+Mettre en œuvre la structure de données Pile (LIFO) en C à travers trois unités de compilation :
+- element : définition et manipulation d’un type de donnée générique (ELEMENT)
+- pile_statique : implémentation complète d’une pile statique à taille fixe
+- Application "voie de wagons" : simulation du demi-tour d’un train à l’aide de piles
 
 ---
-
