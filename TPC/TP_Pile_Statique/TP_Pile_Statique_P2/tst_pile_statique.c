@@ -13,6 +13,9 @@ int main(){
     else{
     	affiche_PILE(pl);
     }
+    
+    
+    
     return 0;
 }
 

@@ -10,6 +10,8 @@
 		ELEMENT tab[MAX];
 		int indice_tete;			
 	}PILE;
+
+	
 	
 	/*prototype des fonctions*/
 	PILE init_PILE();

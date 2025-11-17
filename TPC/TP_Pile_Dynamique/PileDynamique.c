@@ -14,7 +14,7 @@ void affiche_PILE(PILE pile){
 	PILE ptr_courant = pile; /*on creer un pointeur courant pour ne pas toucher a PILE*/
 	printf("[ ");
 	while(ptr_courant != NULL){
-		affiche_ELEMENT(ptr -> elem);
+		affiche_ELEMENT(ptr_courant -> elem);
 		ptr_courant = ptr_courant -> ptr_suivant;
 	}
 	printf("]");

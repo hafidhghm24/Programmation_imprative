@@ -17,7 +17,7 @@ void affiche_PILE(PILE pile){
 	printf("[ ");
 	printf("l'indice de la téte est : %d", pile.indice_tete);
 		for (i=0; i< pile.indice_tete; i++){
-			printf("%d, ", pile.tab[i]);
+			affiche_ELEMENT(pile.tab[i]);
 		
 		}
 	printf("]");
@@ -40,7 +40,6 @@ int PILE_estPleine(PILE pile){
 PILE emPILE(PILE pile, ELEMENT elm){
 	pile.tab[elm];
 	pile.indice_tete ++;
-
 }
 	
 
