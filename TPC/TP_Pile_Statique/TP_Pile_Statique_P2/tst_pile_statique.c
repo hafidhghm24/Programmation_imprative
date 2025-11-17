@@ -2,11 +2,9 @@
 #include "pile_statique.h"
 #include "element.h"
 
-
-
 int main(){
-	PILE pl;
-	PILE init_PILE(pl);
-	
-	return 0;
+    PILE pl =  init_PILE();
+    affiche_PILE(pl);
+    return 0;
 }
+
