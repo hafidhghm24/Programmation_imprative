@@ -12,4 +12,3 @@ element.o: element.c element.h
 
 clean: 
 	rm -rf *.o
-

@@ -3,7 +3,7 @@
 
 #include "element.h"
 /*declaration d'une constante*/
-#define MAX 100
+#define MAX 5
 
 	/*définir le type PILE*/
 	typedef struct PILE{
@@ -14,5 +14,7 @@
 	/*prototype des fonctions*/
 	PILE init_PILE();
 	void affiche_PILE(PILE pile);	
-
+	int PILE_estVide(PILE pile);
+	int PILE_estPleine(PILE pile);
+	PILE emPILE(PILE pile, ELEMENT elm);
 #endif
