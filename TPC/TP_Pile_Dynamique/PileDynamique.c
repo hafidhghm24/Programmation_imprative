@@ -30,8 +30,14 @@ int PILE_estVide(PILE pile){
 }
 
 PILE emPILE(PILE pile, ELEMENT elm){
+	/*initialiser le pointeur courant*/
 	PILE ptr_courant = pile;
-	ptr_courant
+
+	/*on creer une nouvelle cellule*/
+	tp_cell cellule
+
+	/*on pointe vers la nouvelle cellule*/
+	ptr_courant->ptr_suivant = cellule.ptr_suivant
 
 
 }
