@@ -10,11 +10,11 @@
 		ELEMENT elm; 		
 	}tp_cell;
 	
-	typedef tp_cell *PILE;  /*la PILE cest un type qui pointe vers la premier cellule de la pile*/
+	typedef tp_cell *PILE;  /*la PILE cest un type,pointe vers la premier cellule de la pile*/
 
 	
 	/*DECLARATION DES PROTOTYPES*/
-	PILE intit_PILE();
+	PILE init_PILE();
 	void affiche_PILE(PILE pile);
 	int PILE_estVide(PILE pile);
 	PILE emPILE(PILE pile, ELEMENT elm);
