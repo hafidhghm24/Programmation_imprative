@@ -49,3 +49,20 @@ PILE emPILE(PILE pile, ELEMENT elm){
 	return new_cellule;
 
 }
+PILE dePILE(PILE pile, ELEMENT *ptr_elm){
+	if (PILE_estVide(pile)){
+		print("ERREUR: la pile est deja vide");
+		return(NULL);
+	}
+
+	tp_cell *ptr_tete = pile;	/*on pointe vers la cellule a supprimer (la tete)*/
+	*ptr_elm = ptr_tete->elm;	/*on recupére la valeur .elm de la tete */
+	PILE new_tete = ptr_tete->ptr_suivant;	/*la nouvelle tete va étre la cellule suivante pointé par la tete actuelle*/
+
+	free(ptr_tete); /*on free la cellule a supprimer car on avais fait un malloc lors de l'empilation*/
+
+	return new_tete;
+
+
+
+}

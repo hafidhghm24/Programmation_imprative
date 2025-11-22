@@ -18,7 +18,7 @@
 	void affiche_PILE(PILE pile);
 	int PILE_estVide(PILE pile);
 	PILE emPILE(PILE pile, ELEMENT elm);
-	PILE* ptr_dePILE(PILE pile, ELEMENT elm);
+	PILE dePILE(PILE pile, ELEMENT* ptr_elm);
 	PILE saisir_PILE();
 
 #endif

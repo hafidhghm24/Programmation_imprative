@@ -31,5 +31,6 @@ int main(void){
     pile = emPILE(pile, elm3);
     affiche_PILE(pile);
 
+    
     return 0;
 }
