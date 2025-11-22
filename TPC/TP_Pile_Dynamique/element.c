@@ -2,7 +2,7 @@
 #include "element.h"
 
 void affiche_ELEMENT(ELEMENT element) {
-    printf("la valeur de l'element est: %d \n", element);
+    printf("%d ", element);
 }
 
 void saisir_ELEMENT(ELEMENT* ptr_elm) {

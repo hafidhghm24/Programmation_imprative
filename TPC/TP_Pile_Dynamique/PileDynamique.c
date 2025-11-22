@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h> /*pour utiliser malloc*/
 #include "element.h"
 #include "PileDynamique.h"
+
 
 
 
@@ -26,18 +28,24 @@ void affiche_PILE(PILE pile){
 int PILE_estVide(PILE pile){
 	if (pile == NULL){
 		return 1;
-	}else return 0;
+	}return 0;
 }
 
 PILE emPILE(PILE pile, ELEMENT elm){
-	/*initialiser le pointeur courant*/
-	PILE ptr_courant = pile;
+	/*creer une nouvelle cellule*/
+	tp_cell *new_cellule = malloc(sizeof(tp_cell));
+	if (new_cellule == NULL){
+		fprintf(stderr, "ERREUR: echec de lalocation dynamique");
+		return pile;
+	}
 
-	/*on creer une nouvelle cellule*/
-	tp_cell cellule
+	/*remplire la cellule*/
+	new_cellule->elm = elm;
 
-	/*on pointe vers la nouvelle cellule*/
-	ptr_courant->ptr_suivant = cellule.ptr_suivant
+	/*la nouvelle cellule pointe vers lancienne (FILO)*/
+	new_cellule->ptr_suivant = pile; /* (new_cellule => PILE => NULL) */
 
+	/*cette nouvelle cellule est la nouvelle tete de la pile (la premiére a sortir)*/
+	return new_cellule;
 
 }

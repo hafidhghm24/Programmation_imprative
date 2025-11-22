@@ -1,5 +1,5 @@
-#ifndef PILE_DYNAMIQUE_H
-#define PILE_DYNAMIQUE_H
+#ifndef __PILE_DYNAMIQUE_H__
+#define __PILE_DYNAMIQUE_H__
 #include "element.h"
 
 	/*DEFINITION DES TYPES*/
@@ -10,7 +10,7 @@
 		ELEMENT elm; 		
 	}tp_cell;
 	
-	typedef tp_cell *PILE;  /*la PILE cest un type,pointe vers la premier cellule de la pile*/
+	typedef tp_cell *PILE;  /*la PILE cest un type,pointe vers vers une cellule (la premier cellule de la pile)*/
 
 	
 	/*DECLARATION DES PROTOTYPES*/
