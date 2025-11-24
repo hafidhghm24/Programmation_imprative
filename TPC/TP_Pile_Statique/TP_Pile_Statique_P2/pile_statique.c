@@ -79,7 +79,7 @@ PILE saisir_PILE(PILE pile){
 	}
 	else{
 		/*demander a lutilisateur combien d'élement la pile va contenir */
-		printf("comnien d'élement voulez vous remplire");
+		printf("comnien d'élement voulez vous remplire: ");
 		scanf("%d",&n);
 
 		/*remplire la pile de n element*/

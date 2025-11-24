@@ -71,7 +71,7 @@ if (!PILE_estPleine(p)) printf("OK (36)\n") ; else printf("\t NOK (36)\n") ;
 p = emPILE(p,1000) ;
 printf("OK (37)\n") ;
 
-
+return 0;
 }
 
 

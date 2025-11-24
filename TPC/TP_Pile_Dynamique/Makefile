@@ -1,5 +1,5 @@
 prog_tst_PileDynamique.out: element.o tst_PileDynamique.o PileDynamique.o
-	gcc -o prog_tst_PileDynamique.out element.o tst_PileDynamique.o PileDynamique.o
+	gcc -o prog_tst_PileDynamique.out element.o tst_PileDynamique.o PileDynamique.opro
 
 element.o: element.c
 	gcc -c element.c -o element.o -W -Wall -pedantic
