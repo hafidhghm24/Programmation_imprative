@@ -14,7 +14,7 @@ int main(void){
     saisir_ELEMENT(&elm3);
 
     /*initialiser la pile*/
-    PILE pile;
+    PILE pile; PILE pile2;
     pile = init_PILE();
 
     
@@ -31,6 +31,26 @@ int main(void){
     pile = emPILE(pile, elm3);
     affiche_PILE(pile);
 
+    /*test de la fonction dePILE*/
+
+    /*les element a recupérer*/
+    ELEMENT e1;
+    ELEMENT e2;
+    ELEMENT e3;
+
+    pile = dePILE(pile, &e1);
+    affiche_PILE(pile);
+
+    pile = dePILE(pile, &e2);
+    affiche_PILE(pile);
+    
+    pile = dePILE(pile, &e3);
+    affiche_PILE(pile);
+    
+
+    /*test de la fonction saisir*/
+    pile2 = saisir_PILE();
+    affiche_PILE(pile2);
     
     return 0;
 }

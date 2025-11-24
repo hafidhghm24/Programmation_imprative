@@ -54,17 +54,43 @@ PILE emPILE(PILE pile, ELEMENT elm){
 
 
 PILE dePILE(PILE pile, ELEMENT *ptr_elm){
+	PILE new_tete;
+	PILE ptr_tete;
 	if (PILE_estVide(pile)){
-		print("ERREUR: la pile est deja vide");
+		fprintf(stderr, "ERREUR: la pile est deja vide");
 		return(NULL);
 	}
 
-	tp_cell *ptr_tete = pile;	/*on pointe vers la cellule a supprimer (la tete)*/
+	ptr_tete = pile;	/*on pointe vers la cellule a supprimer (la tete)*/
 	*ptr_elm = ptr_tete->elm;	/*on recupére la valeur .elm de la tete */
-	PILE new_tete = ptr_tete->ptr_suivant;	/*la nouvelle tete va étre la cellule suivante pointé par la tete actuelle*/
+	new_tete = ptr_tete->ptr_suivant;	/*la nouvelle tete va étre la cellule suivante pointé par la tete actuelle*/
 
 	free(ptr_tete); /*on free la cellule a supprimer car on avais fait un malloc lors de l'empilation*/
 
 	return new_tete;
+}
+
+PILE saisir_PILE(){
+	int i;
+	ELEMENT mon_elm; /*l'élement a saisir*/
+	PILE ma_pile; 
+	ma_pile = init_PILE();
+
+	/*le nombre max delement a saisir*/
+	int n;
+	printf("veuillez saisir le nombre d'elements de la pile: ");
+	scanf("%d", &n);
+
+	/*saisir chaque element un par un*/
+	for (i=0;i<n-1;i++){
+		printf("element %d: ", i);
+		saisir_ELEMENT(&mon_elm);
+
+		/*en empille l'élement saisie dans la pile*/
+		ma_pile = emPILE(ma_pile, mon_elm);
+	}
+
+	return ma_pile;
+
 }
 
