@@ -17,10 +17,10 @@
 
 	
 	/*DECLARATION DES PROTOTYPES*/
-	void init_FILE(MA_FILE *new_file);
+	MA_FILE init_FILE(void);
 	int FILE_estVide(MA_FILE la_file);
 	void affiche_FILE(MA_FILE la_file);
-	MA_FILE emFILE(MA_FILE *la_file, ELEMENT elm);
+	MA_FILE enFILE(MA_FILE *la_file, ELEMENT elm);
 	MA_FILE deFILE(MA_FILE *la_file, ELEMENT* ptr_elm);
 	MA_FILE saisir_FILE(void);
 
