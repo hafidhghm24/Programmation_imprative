@@ -53,6 +53,7 @@ PILE emPILE(PILE pile, ELEMENT elm){
 
 
 
+
 PILE dePILE(PILE pile, ELEMENT *ptr_elm){
 	PILE new_tete;
 	PILE ptr_tete;
