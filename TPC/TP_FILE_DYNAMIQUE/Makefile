@@ -1,16 +1,17 @@
-prog_tst_FileDynamique.out: element.o tst_FileDynamique.o FileDynamique.o
-	gcc -o prog_tst_PileFynamique.out element.o tst_FileDynamique.o PileFynamique.opro
 
-element.o: element.c
+prog_tst_file_dyn.out: element.o tst_file_dyn.o file_dyn.o
+	gcc -o prog_tst_file_dyn.out element.o tst_file_dyn.o file_dyn.o
+
+
+element.o: element.c element.h
 	gcc -c element.c -o element.o -W -Wall -pedantic
 
-FileDynamique.o : FileDynamique.c element.h FileDynamique.h
-	gcc -c FileDynamique.c -o FileDynamique.o -Wall -pedantic
+file_dyn.o: file_dyn.c element.h file_dyn.h
+	gcc -c file_dyn.c -o file_dyn.o -Wall -pedantic
 
-tst_FleDynamique.o: tst_FileDynamique.c element.h FileDynamique.h
-	gcc -c tst_FileDynamique.c -o tst_FileDynamique.o -W -Wall -pedantic
-	
+
+tst_file_dyn.o: tst_file_dyn.c element.h file_dyn.h
+	gcc -c tst_file_dyn.c -o tst_file_dyn.o -W -Wall -pedantic
+
 clean: 
-	rm -rf *.o
-	
-	
+	rm -rf *.o *.out

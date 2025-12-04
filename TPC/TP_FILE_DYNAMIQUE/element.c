@@ -5,9 +5,9 @@ void affiche_ELEMENT(ELEMENT element) {
     printf("%d ", element);
 }
 
-ELEMENT saisir_ELEMENT(ELEMENT ptr_elm) {
-    printf("veuillez introduire l'element : ");
-    scanf("%d", ptr_elm);
+void saisir_ELEMENT(ELEMENT *ptr_elm) {
+    printf("ELEMENT => ");
+    scanf("%d", ptr_elm); 
 }
 
 void compare_ELEMENT(ELEMENT* ptr_elm1, ELEMENT* ptr_elm2) {

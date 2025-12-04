@@ -7,7 +7,7 @@
 	/* prototype des fonctions */
 	
 	void affiche_ELEMENT(ELEMENT element);
-	ELEMENT saisir_ELEMENT(ELEMENT ptr_elm);
+	void saisir_ELEMENT(ELEMENT *ptr_elm);
 	void compare_ELEMENT(ELEMENT* ptr_elm1, ELEMENT* ptr_elm2);
 	void affect_ELEMENT(ELEMENT ptr_elm1, ELEMENT* ptr_elm2);
 
