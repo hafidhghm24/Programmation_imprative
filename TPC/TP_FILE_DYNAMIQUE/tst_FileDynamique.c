@@ -5,7 +5,14 @@
 
 int main(void){
 
-    /*TEST: */
+    /*TEST: init_FILE()*/
+    MA_FILE file_tst = init_FILE();
+
+    /*TEST: affiche_FILE*/
+
+    /*TEST: enFILE*/
+
+    /*TEST: deFILE*/
     
     return 0;
 }

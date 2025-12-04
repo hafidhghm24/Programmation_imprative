@@ -5,7 +5,7 @@ void affiche_ELEMENT(ELEMENT element) {
     printf("%d ", element);
 }
 
-void saisir_ELEMENT(ELEMENT* ptr_elm) {
+ELEMENT saisir_ELEMENT(ELEMENT ptr_elm) {
     printf("veuillez introduire l'element : ");
     scanf("%d", ptr_elm);
 }

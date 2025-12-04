@@ -62,6 +62,7 @@ MA_FILE enFILE(MA_FILE la_file, ELEMENT elm){
 	
 	return la_file;
 }
+
 MA_FILE deFILE(MA_FILE la_file, ELEMENT *ptr_elm){
 	if(FILE_estVide(la_file)){
 		fprintf(stderr,"la pile est vide !\n");
@@ -86,7 +87,24 @@ MA_FILE deFILE(MA_FILE la_file, ELEMENT *ptr_elm){
 
 	return la_file;
 }
+MA_FILE saisir_FILE(MA_FILE la_file){
+	/*initialisation*/
+	int n; 
+	int i;
+	ELEMENT elm;
 
+	
+	/*demander le nombre delement a saisir*/
+	printf("combien de d'élement vous voulais ajouter : ");
+	scanf("%d", n);
 
+	/*ajouter chaque-element*/
+	for (i = 0; i<=n ;i++){
+		
+		elm = saisir_ELEMENT(la_file.tete->elm);
+		enFILE(la_file, elm);
+		
+	}
 
+}
 
