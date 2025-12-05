@@ -13,6 +13,12 @@ MA_FILE init_FILE(void){
     return new_file;
 }
 
+
+
+/**
+ * @brief verifier si la file est vide
+ * @result booleen
+ */
 int FILE_estVide(MA_FILE la_file){
     if (la_file.tete == NULL){
         return 1;
@@ -104,6 +110,9 @@ MA_FILE deFILE(MA_FILE la_file, ELEMENT *ptr_elm){
 
 
 
+/**
+ * @brief saisir chaque element pour chaque cellule
+ */
 MA_FILE saisir_FILE(MA_FILE la_file){
     /*initialisation*/
     int n; 
